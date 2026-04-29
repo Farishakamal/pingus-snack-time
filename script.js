@@ -87,7 +87,7 @@ function startGame() {
     gameRunning = true;
     
     scoreSpan.innerText = score;
-    livesSpan.innerText = '❤️'.repeat(lives); 
+    livesSpan.innerHTML = '<i class="fa-solid fa-heart fa-beat" style="color: rgb(253, 47, 47); margin-left: 5px;"></i>'.repeat(lives);
     
     isMovingLeft = false;
     isMovingRight = false;

@@ -4,37 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <title>Pingu's Snack Time</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-container">
-        <h2>Pingu's Snack Time</h2>
+
+    
+    <div class="game-container"> 
         
+        <h2>Pingu's Snack Time</h2>
         <div class="score-board" style="display: flex; justify-content: space-between; padding: 0 20px;">
             <span>Marks: <span id="score">0</span></span>
-            <span id="lives">❤️❤️❤️</span>
+            <span id="lives"></span>
         </div>
-        
+      
         <div id="canvas-container">
-            <canvas id="gameCanvas"></canvas>
-            
-            <div id="gameOverScreen" style="display: none;">
-                <h3>GAME OVER</h3>
-                <p>Marks: <span id="finalScore">0</span></p>
-               
-                <button id="restartIconBtn"><i class="fa-solid fa-repeat"></i></button> 
+            <div id="canvas-wrapper">
+                <canvas id="gameCanvas"></canvas>
+                
+
+                <div id="gameOverScreen" style="display: none;">
+                    <h3>GAME OVER</h3>
+                    <p>Marks: <span id="finalScore">0</span></p>
+                    <button id="restartIconBtn"><i class="fa-solid fa-repeat"></i></button> 
+                </div>
             </div>
         </div>
         
+    
         <div class="controls">
             <button id="btnLeft">←</button>
             <button id="btnRight">→</button>
         </div>
-    </div>
+
+    </div> 
+    
+
     <script src="script.js"></script>
 </body>
 </html>
