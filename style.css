@@ -1,0 +1,123 @@
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #f3eafe; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    touch-action: manipulation;
+}
+
+.game-container {
+    width: 350px;
+    background-color: #c68afd; 
+    color: white;
+    text-align: center;
+    padding: 25px 20px; 
+    border-radius: 40px; 
+    border: 8px solid #ff78f8; 
+    box-shadow: 
+        0 15px 0 #a222d4, 
+        0 15px 20px rgba(0,0,0,0.4); 
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+.score-board {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#gameCanvas {
+    background-color: #fdf8ff; 
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px; 
+    border: 4px solid #fff; 
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.1); 
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.controls button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    color: #4f00b6; 
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.1s;
+}
+
+.controls button:active {
+    transform: scale(0.90); 
+    background-color: #f3eafe; 
+}
+
+#canvas-container {
+    position: relative; 
+    width: max-content;
+    margin: 0 auto;
+}
+
+#gameOverScreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#gameOverScreen h3 {
+    font-size: 32px;
+    margin: 0;
+    color: #fd79a8; /* Pink comel */
+    text-shadow: 2px 2px 0px #000;
+}
+
+#gameOverScreen p {
+    font-size: 22px;
+    margin: 10px 0 20px 0;
+}
+
+#restartIconBtn {
+    background-color: white;
+    color: #6c5ce7;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 26px; 
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#restartIconBtn:active {
+    transform: rotate(180deg) scale(0.9); 
+}
